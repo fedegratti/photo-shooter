@@ -1,5 +1,6 @@
 const Sections = {
   INITIAL: 'initial',
+  PREVIEW: 'preview',
   SHOOTING: 'shooting',
   TRANSITION: 'transition',
   LOADER: 'loader',
@@ -8,6 +9,7 @@ const Sections = {
 
 const SectionsURLs = {
   INITIAL: '/initial',
+  PREVIEW: '/preview',
   SHOOTING: '/shooting',
   TRANSITION: '/transition',
   LOADER: '/loader',
