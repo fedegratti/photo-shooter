@@ -1,1 +1,48 @@
-.shooting {}
+.shooting {
+    display: flex;
+
+    // flex-direction: column;
+
+    // align-items: center;
+
+    justify-content: center;
+
+    color: black;
+}
+
+    .shooting__title {
+        position: absolute;
+
+        padding-top: 20 * $ptr;
+
+        font-size: 32 * $ptr;
+    }
+
+    .shooting__countdown {
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: white;
+    }
+
+        .shooting__countdown-text {
+            position: absolute;
+
+            opacity: 0;
+
+            font-size: 120 * $ptr;
+            font-weight: bold;
+
+            img {
+                width: 100 * $ptr;
+                height: 100 * $ptr;
+            }
+        }

@@ -1,1 +1,65 @@
-.home {}
+.home {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+    .home__webcam, .home__output-canvas {
+        position: absolute;
+
+        // top: 0;
+        // left: 0;
+
+        width: 324 * $ptr;
+        height: 576 * $ptr;
+
+        border-radius: 12 * $ptr;
+
+        box-shadow: 0 0 3 * $ptr rgb(255 255 255 / 100%);
+
+        object-fit: cover;
+
+        transform: rotateY(180deg);
+    }
+
+    .home__webcam {
+        // background-color: black;
+    }
+
+    .home__output-canvas {
+        display: none
+
+    }
+
+    .home__modal {
+
+        @include backdrop-filter(blur(5 * $ptr));
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        position: absolute;
+
+        padding: 20 * $ptr;
+
+        max-width: 400 * $ptr;
+
+        background-color: rgb(30 30 30 / 80%);
+
+        border: 1 * $ptr solid white;
+
+        border-radius: 12 * $ptr;
+    }
+
+        .home__title {
+            font-size: 24 * $ptr;
+            font-weight: bold;
+        }

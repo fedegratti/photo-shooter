@@ -1,6 +1,7 @@
-import { BaseApplication, ResourceContainer, TransitionManager, ViewManager } from 'ohzi-core';
+import { BaseApplication, Browser, ResourceContainer, TransitionManager, ViewManager } from 'ohzi-core';
 
 import { HomeView } from './views/home/HomeView';
+import { PreviewView } from './views/preview/PreviewView';
 import { ShootingView } from './views/shooting/ShootingView';
 import { TransitionView } from './views/transition/TransitionView';
 
@@ -14,7 +15,9 @@ import { KeyboardInputController } from './components/KeyboardInputController';
 import { TweakPane } from './components/TweakPane';
 import { Settings } from './Settings';
 
+import { RequestManager } from 'ohzi-components';
 import { default_state_data } from '../data/default_state_data';
+import { SmileDetector } from './components/SmileDetector';
 
 // import { KeyboardInputController } from './components/KeyboardInputController';
 class MainApplication extends BaseApplication
@@ -24,6 +27,8 @@ class MainApplication extends BaseApplication
     this.input = Input;
 
     TransitionManager.set_default_state_data(default_state_data);
+
+    RequestManager.init(Browser);
 
     // this.ui_collision_layer = UICollisionLayer;
     // this.ui_collision_layer.init(Input, Time);
@@ -50,6 +55,8 @@ class MainApplication extends BaseApplication
 
     this.keyboard_input_controller = new KeyboardInputController();
 
+    this.smile_detector = SmileDetector;
+
     this.view_manager = ViewManager;
     this.view_manager.set_browser_title_suffix('OHZI Interactive Studio');
 
@@ -58,12 +65,14 @@ class MainApplication extends BaseApplication
     // __SECTIONS__
 
     this.home_view = new HomeView();
+    this.preview_view = new PreviewView();
     this.shooting_view = new ShootingView();
     this.transition_view = new TransitionView();
 
     // this.modal_component.start();
 
     this.home_view.start();
+    this.preview_view.start();
     this.shooting_view.start();
     this.transition_view.start();
 
@@ -102,6 +111,8 @@ class MainApplication extends BaseApplication
   {
     // this.ui_collision_layer.update();
     // this.modal_component.update();
+
+    this.smile_detector.update();
   }
 }
 

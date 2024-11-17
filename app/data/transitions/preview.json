@@ -7,6 +7,14 @@
       "to_value": 1,
       "easing_function": "ease_in_out_cubic",
       "attribute_name": "preview_opacity"
+    },
+    {
+      "type": "segment",
+      "from_time": 5,
+      "to_time": 7,
+      "to_value": 0,
+      "easing_function": "ease_in_out_cubic",
+      "attribute_name": "preview_revealing_opacity"
     }
   ],
   "triggers": []

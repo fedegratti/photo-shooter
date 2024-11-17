@@ -43,10 +43,12 @@
     "fix-syntax": "standardx --fix || echo 'Done'"
   },
   "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.17",
     "@tweakpane/plugin-essentials": "^0.2.1",
     "ohzi-components": "3.5.0",
     "ohzi-core": "12.4.0",
     "pit-js": "4.1.1",
+    "qrcode": "^1.5.4",
     "tweakpane": "^4.0.4"
   },
   "devDependencies": {

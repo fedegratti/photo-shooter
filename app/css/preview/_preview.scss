@@ -1,1 +1,110 @@
-.preview {}
+.preview {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+    .preview__body {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 24 * $ptr;
+
+        align-items: center;
+
+        justify-content: center;
+    }
+
+        .preview__title {
+            padding: 0 20 * $ptr;
+
+            font-size: 24 * $ptr;
+            font-weight: 700;
+
+            text-align: center;
+        }
+
+        .preview__img-container {
+            position: relative;
+
+            width: 324 * $ptr;
+            height: 576 * $ptr;
+
+            border-radius: 20 * $ptr;
+
+            box-shadow: 0 0 3 * $ptr rgb(255 255 255 / 100%);
+
+            overflow: hidden;
+        }
+
+            .preview__img {
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+            }
+
+            .preview__revealing {
+                display: flex;
+        
+                align-items: center;
+        
+                justify-content: center;
+        
+                position: absolute;
+                top: 0;
+                left: 0;
+        
+                width: 100%;
+                height: 100%;
+        
+                background-color: white;
+        
+                pointer-events: none;
+
+                img {
+                    width: 100 * $ptr;
+                    height: 100 * $ptr;
+
+                    object-fit: contain;
+                }
+            }
+
+        .preview__qr {
+            position: absolute;
+            right: 20 * $ptr;
+            bottom: 20 * $ptr;
+
+            img {
+                border-radius: 20 * $ptr;
+            }
+        }
+
+    .preview__restarting {
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        position: absolute;
+    }
+
+        .preview__restarting-text {
+            padding: 40 * $ptr;
+
+            color: black;
+
+            font-size: 24 * $ptr;
+    
+            background-color: white;
+    
+            border-radius: 12 * $ptr;
+
+            &:empty {
+                display: none;
+            }
+        }

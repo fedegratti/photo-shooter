@@ -48,8 +48,8 @@ class Api
     Input.init(app_container, document);
     Initializer.init(Input);
 
-    Settings.dpr = 1;
-    // Settings.dpr = window.devicePixelRatio;
+    // Settings.dpr = 1;
+    Settings.dpr = window.devicePixelRatio;
 
     const graphics_initializer = new GraphicsInitializer();
     graphics_initializer.init(canvas, core_attributes, context_attributes, threejs_attributes);

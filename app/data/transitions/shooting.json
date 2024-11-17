@@ -7,6 +7,62 @@
       "to_value": 1,
       "easing_function": "ease_in_out_cubic",
       "attribute_name": "shooting_opacity"
+    },
+    {
+      "type": "segment",
+      "from_time": 1,
+      "to_time": 1.2,
+      "to_value": 1,
+      "easing_function": "ease_in_out_cubic",
+      "attribute_name": "countdown_text_3_opacity"
+    },
+    {
+      "type": "segment",
+      "from_time": 1.4,
+      "to_time": 2.4,
+      "to_value": 0,
+      "easing_function": "ease_in_out_cubic",
+      "attribute_name": "countdown_text_3_opacity"
+    },
+    {
+      "type": "segment",
+      "from_time": 2.1999999999999997,
+      "to_time": 2.4,
+      "to_value": 1,
+      "easing_function": "ease_in_out_cubic",
+      "attribute_name": "countdown_text_2_opacity"
+    },
+    {
+      "type": "segment",
+      "from_time": 2.5,
+      "to_time": 3.5,
+      "to_value": 0,
+      "easing_function": "ease_in_out_cubic",
+      "attribute_name": "countdown_text_2_opacity"
+    },
+    {
+      "type": "segment",
+      "from_time": 3.3,
+      "to_time": 3.5,
+      "to_value": 1,
+      "easing_function": "ease_in_out_cubic",
+      "attribute_name": "countdown_text_1_opacity"
+    },
+    {
+      "type": "segment",
+      "from_time": 3.65,
+      "to_time": 4.65,
+      "to_value": 0,
+      "easing_function": "ease_in_out_cubic",
+      "attribute_name": "countdown_text_1_opacity"
+    },
+    {
+      "type": "segment",
+      "from_time": 4.5,
+      "to_time": 5,
+      "to_value": 1,
+      "easing_function": "ease_in_out_cubic",
+      "attribute_name": "countdown_text_loading_opacity"
     }
   ],
   "triggers": []

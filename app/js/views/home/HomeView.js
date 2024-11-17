@@ -4,7 +4,10 @@ import { Sections, SectionsURLs } from '../Sections';
 import { HomeSceneController } from './HomeSceneController';
 import { HomeTransitionController } from './HomeTransitionController';
 
+import { ViewManager } from 'ohzi-core';
 import home_data from '../../../data/transitions/home.json';
+import { FaceLandmarkerController } from '../../components/FaceLandmarkerController';
+import { SmileDetector } from '../../components/SmileDetector';
 
 class HomeView extends CommonView
 {
@@ -30,6 +33,14 @@ class HomeView extends CommonView
   {
     this.scene_controller.start();
     this.transition_controller.start();
+
+    this.face_landmarker_controller = new FaceLandmarkerController(this);
+    this.face_landmarker_controller.start();
+
+    this.webcam = document.querySelector('.home__webcam');
+    this.webcam_overlay = document.querySelector('.home__output-canvas');
+
+    this.modal = document.querySelector('.home__modal');
   }
 
   before_enter()
@@ -68,6 +79,11 @@ class HomeView extends CommonView
   {
     this.scene_controller.update();
     this.transition_controller.update();
+
+    if (SmileDetector.smiling)
+    {
+      ViewManager.go_to_view(Sections.SHOOTING, false);
+    }
   }
 
   update_enter_transition(global_view_data, transition_progress, action_sequencer)
@@ -80,6 +96,21 @@ class HomeView extends CommonView
   {
     this.scene_controller.update_exit_transition(global_view_data, transition_progress, action_sequencer);
     this.transition_controller.update_exit_transition(global_view_data, transition_progress, action_sequencer);
+  }
+
+  set_face_data(data)
+  {
+    SmileDetector.set_data(data);
+  }
+
+  begin()
+  {
+    this.modal.classList.add('hidden');
+
+    this.webcam.classList.remove('hidden');
+    this.webcam_overlay.classList.remove('hidden');
+
+    // More stuff is happening on FaceLandmarkerController
   }
 }
 

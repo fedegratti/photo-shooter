@@ -1,2 +1,16 @@
 .section.home.hidden
 
+    video.home__webcam.hidden(id="webcam" autoplay playsinline)
+    canvas.home__output-canvas.hidden
+
+    .blend-shapes
+        ul.blend-shapes-list(id="video-blend-shapes")
+
+    .home__modal 
+        .home__title Bienvenido/a a Photo Shooter!
+        p.home__description 
+            | Esta app permite sacar una foto automaticamente cuando sonries.
+            br
+            br
+
+        .button.button--primary.home__webcam-button(onclick='app.home_view.begin()') Start

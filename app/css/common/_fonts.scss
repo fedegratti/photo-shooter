@@ -1,30 +1,26 @@
 
-// $montserrat-font: 'Montserrat';
+$unbounded-font: 'unbounded';
 
-// @font-face{
-//   font-family: $montserrat-font;
-//   src: url('/fonts/montserrat/montserrat_regular.ttf') format('truetype');
-//   font-weight: 500;
-//   font-display: swap;
-// }
+@font-face{
+  font-family: $unbounded-font;
+  src: url('/fonts/unbounded/unbounded_thin.woff2') format('woff2');
 
-// @font-face{
-//   font-family: $montserrat-font;
-//   src: url('/fonts/montserrat/montserrat_bold.ttf') format('truetype');
-//   font-weight: bold;
-//   font-display: swap;
-// }
+  font-weight: 300;
+  font-display: swap;
+}
 
-// @font-face{
-//   font-family: $montserrat-font;
-//   src: url('/fonts/montserrat/montserrat_extra_bold.ttf') format('truetype');
-//   font-weight: 900;
-//   font-display: swap;
-// }
+@font-face{
+  font-family: $unbounded-font;
+  src: url('/fonts/unbounded/unbounded_regular.woff2') format('woff2');
 
-// @font-face{
-//   font-family: $montserrat-font;
-//   src: url('/fonts/montserrat/montserrat_semi_bold.ttf') format('truetype');
-//   font-weight: 600;
-//   font-display: swap;
-// }
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: $unbounded-font;
+  src: url('/fonts/unbounded/unbounded_bold.woff2') format('woff2');
+
+  font-weight: bold;
+  font-display: swap;
+}

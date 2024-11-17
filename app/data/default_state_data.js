@@ -1,6 +1,12 @@
 const default_state_data = {
   loader_opacity: 0,
+  preview_opacity: 0,
   shooting_opacity: 0,
+  countdown_text_3_opacity: 0,
+  countdown_text_2_opacity: 0,
+  countdown_text_1_opacity: 0,
+  countdown_text_loading_opacity: 0,
+  preview_revealing_opacity: 1,
   transition_opacity: 0,
   home_opacity: 0,
   camera_x: 0,
