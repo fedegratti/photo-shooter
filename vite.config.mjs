@@ -1,19 +1,42 @@
-import pugPlugin from '@vituum/vite-plugin-pug';
-// import fs from 'fs';
+import fs from 'fs';
 import path from 'path';
+import { defineConfig } from 'vite';
 import glsl from 'vite-plugin-glsl';
+import vitePugPlugin from 'vite-plugin-pug-transformer';
 import sections_meta from './app/data/sections_meta.json';
 import packagejson from './package.json';
 
-export default {
+const useHttps = process.env.VITE_USE_HTTPS === 'true';
+
+export default defineConfig({
   plugins: [
     glsl(),
-    pugPlugin({
-      globals: {
-        sections_meta,
-        package: packagejson
-      }
+    vitePugPlugin({ pugLocals: {
+          sections_meta,
+          package: packagejson
+        }
     }),
+    {
+      name: "ohzi-static-files-dont-exist",
+      configureServer(server) {
+        server.middlewares.use((req, res, next) => {
+          const url = req.url || '';
+          const extensions = ['mp3', 'mp4', 'webm', 'glb', 'jpg', 'png', 'webp', 'hdr', 'json', 'gltf', 'xml']
+          
+          // Check if the url contains a dot (.) which means it's probably a static file request
+          if (url.includes('.') && extensions.includes(url.split('.').pop())) {
+            const filePath = path.join(process.cwd(), 'public', url);
+            
+            // Check if the file exists in the public directory
+            if (!fs.existsSync(filePath)) {
+              res.statusCode = 404;
+              return;
+            }
+          } 
+          next(); // Continue to the next middleware if the file exists
+        })
+      }
+    }
     // watch({
     //   pattern: "./core/**/*.js",
     //   command: "cd core && yarn build",
@@ -22,7 +45,7 @@ export default {
   build: {
     target: 'esnext', // browsers can handle the latest ES features
     rollupOptions: {
-      input: ['index.pug.html'],
+      input: ['index.html'],
       output: {
         manualChunks: {
           'ohzi-core': ['ohzi-core'],
@@ -41,10 +64,13 @@ export default {
     }
   },
   server: {
-    // https: {
-    //   key: fs.readFileSync(path.resolve(__dirname, 'certificates', 'localhost-key.pem')),
-    //   cert: fs.readFileSync(path.resolve(__dirname, 'certificates', 'localhost.pem'))
-    // },
+    https: useHttps
+      ? {
+        key: fs.readFileSync(path.resolve(__dirname, 'certificates', 'localhost-key.pem')),
+        cert: fs.readFileSync(path.resolve(__dirname, 'certificates', 'localhost.pem'))
+      }
+      : false,
     host: true // allows external access
-  }
-};
+  },
+  envPrefix: 'OHZI'
+})

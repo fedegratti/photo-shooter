@@ -27,7 +27,7 @@
     "start": "node tasks/remove_cache.mjs && node tasks/start_app.mjs false",
     "start-ssl": "node tasks/remove_cache.mjs && node tasks/start_app.mjs true",
     "start-vite": "vite --port 1234",
-    "start-vite-ssl": "vite --port 443",
+    "start-vite-ssl": "VITE_USE_HTTPS=true vite --port 443",
     "build-api": "vite build",
     "build": "node tasks/remove_cache.mjs && node tasks/build_app.mjs && yarn copy-public",
     "build-vite": "vite build",
@@ -52,7 +52,6 @@
     "tweakpane": "^4.0.4"
   },
   "devDependencies": {
-    "@vituum/vite-plugin-pug": "^1.1.0",
     "archiver": "^6.0.1",
     "pug": "^3.0.3",
     "replace-in-file": "^6.2.0",
@@ -64,7 +63,8 @@
     "stylelint-order": "^6.0.3",
     "three": "0.166.0",
     "vite": "^5.2.0",
-    "vite-plugin-glsl": "^1.3.0"
+    "vite-plugin-glsl": "^1.3.0",
+    "vite-plugin-pug-transformer": "^1.0.5"
   },
   "standardx": {
     "ignore": [
