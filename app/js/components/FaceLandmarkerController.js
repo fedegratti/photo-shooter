@@ -1,4 +1,5 @@
 import { DrawingUtils, FaceLandmarker, FilesetResolver } from '@mediapipe/tasks-vision';
+import { OScreen } from 'ohzi-core';
 
 export class FaceLandmarkerController
 {
@@ -71,7 +72,7 @@ export class FaceLandmarkerController
 
     // getUsermedia parameters.
     const constraints = {
-      video: true
+      video: OScreen.portrait ? { facingMode: { exact: 'environment' } } : true
     };
 
     // Activate the webcam stream.
