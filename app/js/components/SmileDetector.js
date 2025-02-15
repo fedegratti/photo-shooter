@@ -81,7 +81,7 @@ class SmileDetector
 
       if (!this.smiling)
       {
-        if (normalized_smile_threshold > 0.5)
+        if (normalized_smile_threshold > 0.7)
         {
           this.smiling = true;
           this.smiling_t = 0;
