@@ -12,7 +12,7 @@ import { Sections } from './views/Sections';
 // import { UICollisionLayer } from 'ohzi-components';
 import { Input } from './components/Input';
 import { KeyboardInputController } from './components/KeyboardInputController';
-import { TweakPane } from './components/TweakPane';
+// import { TweakPane } from './components/TweakPane';
 import { Settings } from './Settings';
 
 import { RequestManager } from 'ohzi-components';
@@ -44,10 +44,10 @@ class MainApplication extends BaseApplication
 
   on_enter()
   {
-    if (import.meta.env.DEV)
-    {
-      this.tweak_pane = new TweakPane();
-    }
+    // if (import.meta.env.DEV)
+    // {
+    //   this.tweak_pane = new TweakPane();
+    // }
 
     this.config = ResourceContainer.get_resource('config');
 
