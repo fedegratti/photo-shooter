@@ -1,0 +1,716 @@
+{
+  "Name": "Session1",
+  "CaptureName": "Capture",
+  "Series": 0,
+  "AlowFolderChange": false,
+  "ReloadOnFolderChange": false,
+  "Folder": "E:\\wedding_pictures",
+  "FileNameTemplate": "DSC_[Counter 4 digit]",
+  "Counter": 7,
+  "UseOriginalFilename": true,
+  "BackUpPath": null,
+  "BackUp": false,
+  "Files": [
+    {
+      "F": "4.5",
+      "Iso": "1600",
+      "E": "1/160 s",
+      "FocalLength": "35.0 mm",
+      "ExposureBias": "0 EV",
+      "ShortName": "DSC_0003",
+      "Format": "RAW",
+      "FileName": "E:\\wedding_pictures\\DSC_0003.nef",
+      "BackupFileName": null,
+      "HaveBackupFile": false,
+      "CameraSerial": null,
+      "OriginalName": null,
+      "Series": 0,
+      "Rotation": 0,
+      "AutoRotation": 0,
+      "Transformed": false,
+      "IsJpg": false,
+      "IsRaw": true,
+      "IsMovie": false,
+      "FileDate": "2025-02-01T12:52:58.4354532-03:00",
+      "Name": "DSC_0003.nef",
+      "IsChecked": false,
+      "IsLiked": false,
+      "IsUnLiked": false,
+      "HaveGeneratedThumbnail": true,
+      "FileNameTemplates": [
+        {
+          "Name": "[Capture Name]",
+          "Value": "Capture",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Series 4 digit]",
+          "Value": "0000",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Exposure Compensation]",
+          "Value": "0.0",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[FNumber]",
+          "Value": "4.5",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM-dd]",
+          "Value": "2025-02-01",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[File format]",
+          "Value": "Raw",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Camera Name]",
+          "Value": "D3500 (2000291)",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Camera Order]",
+          "Value": "000",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Unix Time]",
+          "Value": "1738414378",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Original Filename]",
+          "Value": "DSC_0003",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy]",
+          "Value": "2025",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date MM]",
+          "Value": "02",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date dd]",
+          "Value": "01",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date HH]",
+          "Value": "12",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date mm]",
+          "Value": "52",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date ss]",
+          "Value": "58",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM]",
+          "Value": "2025-02",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM-dd-hh-mm-ss]",
+          "Value": "2025-02-01-12-52-58",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyyMMdd]",
+          "Value": "20250201",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date MMM]",
+          "Value": "feb.",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh-mm-ss]",
+          "Value": "12-52-58",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh-mm]",
+          "Value": "12-52",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh]",
+          "Value": "12",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hhmmss]",
+          "Value": "125258",
+          "IsDisabled": false
+        }
+      ],
+      "Id": 2084454558,
+      "IsLoading": false,
+      "SmallThumb": "C:\\ProgramData\\digiCamControl\\Cache\\Small\\2\\2084454558.jpg",
+      "LargeThumb": "C:\\ProgramData\\digiCamControl\\Cache\\Large\\2\\2084454558.jpg",
+      "InfoFile": "C:\\ProgramData\\digiCamControl\\Cache\\InfoFile\\2\\2084454558.json",
+      "RotationAngle": 0,
+      "ThumbData": null
+    },
+    {
+      "F": "4.5",
+      "Iso": "1600",
+      "E": "1/100 s",
+      "FocalLength": "35.0 mm",
+      "ExposureBias": "0 EV",
+      "ShortName": "capture1",
+      "Format": "RAW",
+      "FileName": "E:\\wedding_pictures\\capture1.nef",
+      "BackupFileName": null,
+      "HaveBackupFile": false,
+      "CameraSerial": null,
+      "OriginalName": null,
+      "Series": 0,
+      "Rotation": 0,
+      "AutoRotation": 0,
+      "Transformed": false,
+      "IsJpg": false,
+      "IsRaw": true,
+      "IsMovie": false,
+      "FileDate": "2025-02-01T13:12:08.9990734-03:00",
+      "Name": "capture1.nef",
+      "IsChecked": false,
+      "IsLiked": false,
+      "IsUnLiked": false,
+      "HaveGeneratedThumbnail": true,
+      "FileNameTemplates": [
+        {
+          "Name": "[Capture Name]",
+          "Value": "Capture",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Series 4 digit]",
+          "Value": "0000",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Exposure Compensation]",
+          "Value": "0.0",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[FNumber]",
+          "Value": "4.5",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM-dd]",
+          "Value": "2025-02-01",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[File format]",
+          "Value": "Raw",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Camera Name]",
+          "Value": "D3500 (2000291)",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Camera Order]",
+          "Value": "000",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Unix Time]",
+          "Value": "1738415529",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Original Filename]",
+          "Value": "capture1",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy]",
+          "Value": "2025",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date MM]",
+          "Value": "02",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date dd]",
+          "Value": "01",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date HH]",
+          "Value": "13",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date mm]",
+          "Value": "12",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date ss]",
+          "Value": "09",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM]",
+          "Value": "2025-02",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM-dd-hh-mm-ss]",
+          "Value": "2025-02-01-13-12-09",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyyMMdd]",
+          "Value": "20250201",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date MMM]",
+          "Value": "feb.",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh-mm-ss]",
+          "Value": "13-12-09",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh-mm]",
+          "Value": "13-12",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh]",
+          "Value": "13",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hhmmss]",
+          "Value": "131209",
+          "IsDisabled": false
+        }
+      ],
+      "Id": 759140334,
+      "IsLoading": false,
+      "SmallThumb": "C:\\ProgramData\\digiCamControl\\Cache\\Small\\7\\759140334.jpg",
+      "LargeThumb": "C:\\ProgramData\\digiCamControl\\Cache\\Large\\7\\759140334.jpg",
+      "InfoFile": "C:\\ProgramData\\digiCamControl\\Cache\\InfoFile\\7\\759140334.json",
+      "RotationAngle": 0,
+      "ThumbData": null
+    },
+    {
+      "F": "4.5",
+      "Iso": "1600",
+      "E": "1/100 s",
+      "FocalLength": "35.0 mm",
+      "ExposureBias": "0 EV",
+      "ShortName": "capture10006",
+      "Format": "RAW",
+      "FileName": "E:\\wedding_pictures\\capture10006.nef",
+      "BackupFileName": null,
+      "HaveBackupFile": false,
+      "CameraSerial": null,
+      "OriginalName": null,
+      "Series": 0,
+      "Rotation": 0,
+      "AutoRotation": 0,
+      "Transformed": false,
+      "IsJpg": false,
+      "IsRaw": true,
+      "IsMovie": false,
+      "FileDate": "2025-02-01T13:12:33.8801957-03:00",
+      "Name": "capture10006.nef",
+      "IsChecked": false,
+      "IsLiked": false,
+      "IsUnLiked": false,
+      "HaveGeneratedThumbnail": true,
+      "FileNameTemplates": [
+        {
+          "Name": "[Capture Name]",
+          "Value": "Capture",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Series 4 digit]",
+          "Value": "0000",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Exposure Compensation]",
+          "Value": "0.0",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[FNumber]",
+          "Value": "4.5",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM-dd]",
+          "Value": "2025-02-01",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[File format]",
+          "Value": "Raw",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Camera Name]",
+          "Value": "D3500 (2000291)",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Camera Order]",
+          "Value": "000",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Unix Time]",
+          "Value": "1738415554",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Original Filename]",
+          "Value": "capture10006",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy]",
+          "Value": "2025",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date MM]",
+          "Value": "02",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date dd]",
+          "Value": "01",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date HH]",
+          "Value": "13",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date mm]",
+          "Value": "12",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date ss]",
+          "Value": "33",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM]",
+          "Value": "2025-02",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM-dd-hh-mm-ss]",
+          "Value": "2025-02-01-13-12-33",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyyMMdd]",
+          "Value": "20250201",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date MMM]",
+          "Value": "feb.",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh-mm-ss]",
+          "Value": "13-12-33",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh-mm]",
+          "Value": "13-12",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh]",
+          "Value": "13",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hhmmss]",
+          "Value": "131233",
+          "IsDisabled": false
+        }
+      ],
+      "Id": 1625731452,
+      "IsLoading": false,
+      "SmallThumb": "C:\\ProgramData\\digiCamControl\\Cache\\Small\\1\\1625731452.jpg",
+      "LargeThumb": "C:\\ProgramData\\digiCamControl\\Cache\\Large\\1\\1625731452.jpg",
+      "InfoFile": "C:\\ProgramData\\digiCamControl\\Cache\\InfoFile\\1\\1625731452.json",
+      "RotationAngle": 0,
+      "ThumbData": null
+    },
+    {
+      "F": "4.5",
+      "Iso": "1600",
+      "E": "1/100 s",
+      "FocalLength": "35.0 mm",
+      "ExposureBias": "0 EV",
+      "ShortName": "DSC_0007",
+      "Format": "RAW",
+      "FileName": "E:\\wedding_pictures\\DSC_0007.nef",
+      "BackupFileName": null,
+      "HaveBackupFile": false,
+      "CameraSerial": null,
+      "OriginalName": null,
+      "Series": 0,
+      "Rotation": 0,
+      "AutoRotation": 0,
+      "Transformed": false,
+      "IsJpg": false,
+      "IsRaw": true,
+      "IsMovie": false,
+      "FileDate": "2025-02-01T13:13:43.8584559-03:00",
+      "Name": "DSC_0007.nef",
+      "IsChecked": false,
+      "IsLiked": false,
+      "IsUnLiked": false,
+      "HaveGeneratedThumbnail": true,
+      "FileNameTemplates": [
+        {
+          "Name": "[Capture Name]",
+          "Value": "Capture",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Series 4 digit]",
+          "Value": "0000",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Exposure Compensation]",
+          "Value": "0.0",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[FNumber]",
+          "Value": "4.5",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM-dd]",
+          "Value": "2025-02-01",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[File format]",
+          "Value": "Raw",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Camera Name]",
+          "Value": "D3500 (2000291)",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Camera Order]",
+          "Value": "000",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Unix Time]",
+          "Value": "1738415624",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Original Filename]",
+          "Value": "DSC_0007",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy]",
+          "Value": "2025",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date MM]",
+          "Value": "02",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date dd]",
+          "Value": "01",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date HH]",
+          "Value": "13",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date mm]",
+          "Value": "13",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date ss]",
+          "Value": "43",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM]",
+          "Value": "2025-02",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyy-MM-dd-hh-mm-ss]",
+          "Value": "2025-02-01-13-13-43",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date yyyyMMdd]",
+          "Value": "20250201",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Date MMM]",
+          "Value": "feb.",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh-mm-ss]",
+          "Value": "13-13-43",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh-mm]",
+          "Value": "13-13",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hh]",
+          "Value": "13",
+          "IsDisabled": false
+        },
+        {
+          "Name": "[Time hhmmss]",
+          "Value": "131343",
+          "IsDisabled": false
+        }
+      ],
+      "Id": 422135658,
+      "IsLoading": false,
+      "SmallThumb": "C:\\ProgramData\\digiCamControl\\Cache\\Small\\4\\422135658.jpg",
+      "LargeThumb": "C:\\ProgramData\\digiCamControl\\Cache\\Large\\4\\422135658.jpg",
+      "InfoFile": "C:\\ProgramData\\digiCamControl\\Cache\\InfoFile\\4\\422135658.json",
+      "RotationAngle": 0,
+      "ThumbData": null
+    }
+  ],
+  "Braketing": {
+    "Index": 0,
+    "Mode": 0,
+    "ExpLow": null,
+    "ExpHigh": null,
+    "ExpCaptureCount": 0,
+    "FLow": null,
+    "FHigh": null,
+    "FCaptureCount": 0,
+    "IsoLow": null,
+    "IsoHigh": null,
+    "IsoCaptureCount": 0,
+    "IsBusy": false,
+    "ExposureValues": [],
+    "ShutterValues": [],
+    "PresetValues": [],
+    "ApertureValues": []
+  },
+  "Tags": [],
+  "SelectedTag1": null,
+  "SelectedTag2": null,
+  "SelectedTag3": null,
+  "SelectedTag4": null,
+  "Comment": null,
+  "Barcode": null,
+  "WriteComment": false,
+  "UseCameraCounter": false,
+  "DownloadOnlyJpg": false,
+  "DownloadThumbOnly": false,
+  "DeleteFileAfterTransfer": false,
+  "LeadingZeros": 4,
+  "LowerCaseExtension": true,
+  "AskSavePath": false,
+  "ResetCounterOnSeries": false,
+  "ConfigFile": "C:\\ProgramData\\digiCamControl\\Sessions\\Session1.json",
+  "TimeLapseSettings": {
+    "StartNow": true,
+    "StartAt": false,
+    "StartIn": false,
+    "StartDaily": false,
+    "StartDate": "2024-11-15T20:37:56",
+    "StartDay0": false,
+    "StartDay1": false,
+    "StartDay2": false,
+    "StartDay3": false,
+    "StartDay4": false,
+    "StartDay5": false,
+    "StartDay6": false,
+    "StopAtPhotos": true,
+    "StopIn": false,
+    "StopAt": false,
+    "StopCaptureCount": 0,
+    "StopDate": "2024-11-15T21:37:56",
+    "TimeBetweenShots": 15,
+    "Capture": true,
+    "CaptureAll": false,
+    "CaptureScript": false,
+    "ScriptFile": null,
+    "Bracketing": false,
+    "FineTune": 0,
+    "Resolution": 0,
+    "Started": false
+  },
+  "PrintSettings": {
+    "PrinterName": null,
+    "PaperName": null,
+    "PageWidth": 0,
+    "PageHeight": 0,
+    "Rows": 1,
+    "Cols": 1,
+    "MarginBetweenImages": 0,
+    "Repeat": false,
+    "Rotate": false,
+    "Fill": false
+  },
+  "AllowOverWrite": false,
+  "AutoExportPluginConfigs": []
+}

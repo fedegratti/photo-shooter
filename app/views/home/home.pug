@@ -1,10 +1,17 @@
 .section.home.hidden
 
-    video.home__webcam.hidden(id="webcam" autoplay playsinline)
-    canvas.home__output-canvas.hidden
+    .home__left
 
-    .blend-shapes
-        ul.blend-shapes-list(id="video-blend-shapes")
+        video.home__webcam.hidden(id="webcam" autoplay playsinline)
+        canvas.home__output-canvas.hidden
+
+        .blend-shapes
+            ul.blend-shapes-list(id="video-blend-shapes")
+
+    .home__right
+        .home__previous-pictures
+            h2.home__title Últimas fotos
+            .home__previous-pictures-list
 
     .home__modal 
         .home__title Bienvenido/a a Photo Shooter!

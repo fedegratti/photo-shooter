@@ -1,12 +1,22 @@
 .home {
     display: flex;
 
-    flex-direction: column;
+    // flex-direction: column;
 
     align-items: center;
 
-    justify-content: center;
+    justify-content: space-around;
 }
+
+    .home__left {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+    }
 
     .home__webcam, .home__output-canvas {
         position: absolute;
@@ -34,6 +44,43 @@
         display: none
 
     }
+
+    .home__previous-pictures {
+
+    }
+
+        .home__previous-pictures-list {
+            display: flex;
+
+            flex-direction: row;
+
+            gap: 8 * $ptr;
+
+            height: 100%;
+            max-width: 600 * $ptr;
+
+            // max-height: 300 * $ptr;
+        }
+
+            .home__previous-pictures-item {
+                display: flex;
+
+                width: 306 * $ptr;
+                height: 544 * $ptr;
+
+                border-radius: 12 * $ptr;
+
+                overflow: hidden;
+                
+                img {
+                    // aspect-ratio: 9 / 16;
+
+                    width: 544 * $ptr;
+                    height: 306 * $ptr;
+
+                    object-fit: contain;
+                }
+            }
 
     .home__modal {
 
