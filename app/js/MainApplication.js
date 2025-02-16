@@ -40,6 +40,12 @@ class MainApplication extends BaseApplication
     // {
     //   event.preventDefault();
     // });
+
+    window.onerror = function myErrorHandler(errorMsg, url, lineNumber)
+    {
+      location.reload();
+      return false;
+    };
   }
 
   on_enter()
