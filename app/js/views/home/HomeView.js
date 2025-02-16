@@ -44,6 +44,8 @@ export class HomeView extends CommonView
     this.modal = document.querySelector('.home__modal');
 
     this.previous_pictures = document.querySelector('.home__previous-pictures-list');
+
+    this.start_button = document.querySelector('.home__webcam-button');
   }
 
   before_enter()
@@ -53,45 +55,7 @@ export class HomeView extends CommonView
     this.scene_controller.before_enter();
     this.transition_controller.before_enter();
 
-    // TODO: Create a node app to work as a proxy to the digicam server
-    fetch(`${Settings.server_url}/session`, {
-      method: 'GET', // *GET, POST, PUT, DELETE, etc.
-      mode: 'cors', // no-cors, *cors, same-origin
-      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: 'same-origin', // include, *same-origin, omit
-      redirect: 'follow' // manual, *follow, error
-    })
-      .then(this.on_session.bind(this))
-      .catch(this.on_error.bind(this));
-  }
-
-  on_session(response)
-  {
-    response.json().then((body) =>
-    {
-      console.log(body);
-      this.previous_pictures.innerHTML = '';
-
-      for (let i = body.Files.length - 1; i >= 0; i--)
-      {
-        const file = body.Files[i];
-
-        const picture_container = document.createElement('div');
-        picture_container.classList.add('home__previous-pictures-item');
-
-        const picture = document.createElement('img');
-        picture.src = `${Settings.digicam_url}/thumb/large/${file.Id}.jpg`;
-        picture.style.transform = `rotate(${file.RotationAngle}deg)`;
-        picture_container.appendChild(picture);
-
-        this.previous_pictures.appendChild(picture_container);
-      }
-    });
-  }
-
-  on_error(error)
-  {
-    console.error(error);
+    this.get_last_pictures();
   }
 
   on_enter()
@@ -100,6 +64,8 @@ export class HomeView extends CommonView
 
     this.scene_controller.on_enter();
     this.transition_controller.on_enter();
+
+    this.start_button.click();
   }
 
   before_exit()
@@ -154,5 +120,29 @@ export class HomeView extends CommonView
     this.webcam_overlay.classList.remove('hidden');
 
     // More stuff is happening on FaceLandmarkerController
+  }
+
+  on_last_pictures(response)
+  {
+    response.json().then((body) =>
+    {
+      console.log(body);
+      this.previous_pictures.innerHTML = '';
+
+      for (let i = body.Files.length - 1; i >= body.Files.length - 3; i--)
+      {
+        const file = body.Files[i];
+
+        const picture_container = document.createElement('div');
+        picture_container.classList.add('home__previous-pictures-item');
+
+        const picture = document.createElement('img');
+        picture.src = `${Settings.digicam_url}/thumb/large/${file.Id}.jpg`;
+        picture.style.transform = `rotate(${file.RotationAngle}deg)`;
+        picture_container.appendChild(picture);
+
+        this.previous_pictures.appendChild(picture_container);
+      }
+    });
   }
 }

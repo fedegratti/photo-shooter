@@ -92,7 +92,7 @@ class ShootingView extends CommonView
 
     this.preview_t += Time.delta_time;
 
-    if (this.preview_t > 1)
+    if (this.preview_t > 3)
     {
       this.preview_t = 0;
 

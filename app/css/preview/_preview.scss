@@ -30,8 +30,12 @@
         .preview__img-container {
             position: relative;
 
-            width: 324 * $ptr;
-            height: 576 * $ptr;
+            width: 80%;
+
+            // width: 324 * $ptr;
+            // height: 576 * $ptr;
+
+            aspect-ratio: 16 / 9;
 
             border-radius: 20 * $ptr;
 
@@ -51,27 +55,37 @@
 
             .preview__revealing {
                 display: flex;
-        
+
                 align-items: center;
-        
+
                 justify-content: center;
-        
+
                 position: absolute;
                 top: 0;
                 left: 0;
-        
+
                 width: 100%;
                 height: 100%;
-        
+
                 background-color: white;
-        
+
                 pointer-events: none;
+
+                opacity: 1;
+                transition: opacity 2s;
 
                 img {
                     width: 100 * $ptr;
                     height: 100 * $ptr;
 
                     object-fit: contain;
+                }
+
+                &.hidden {
+                    display: flex;
+
+                    opacity: 0;
+                    pointer-events: none;
                 }
             }
 
@@ -93,6 +107,8 @@
         justify-content: center;
 
         position: absolute;
+        bottom: 20 * $ptr;
+        left: 20 * $ptr;
     }
 
         .preview__restarting-text {
@@ -101,9 +117,9 @@
             color: black;
 
             font-size: 24 * $ptr;
-    
+
             background-color: white;
-    
+
             border-radius: 12 * $ptr;
 
             &:empty {

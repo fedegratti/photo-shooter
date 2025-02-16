@@ -10,8 +10,8 @@
     },
     {
       "type": "segment",
-      "from_time": 5,
-      "to_time": 7,
+      "from_time": 1,
+      "to_time": 3,
       "to_value": 0,
       "easing_function": "ease_in_out_cubic",
       "attribute_name": "preview_revealing_opacity"
