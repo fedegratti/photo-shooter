@@ -1,5 +1,4 @@
 import { DrawingUtils, FaceLandmarker, FilesetResolver } from '@mediapipe/tasks-vision';
-import { OScreen } from 'ohzi-core';
 
 export class FaceLandmarkerController
 {
@@ -61,26 +60,42 @@ export class FaceLandmarkerController
 
     if (this.webcamRunning === true)
     {
-      this.webcamRunning = false;
-      this.enableWebcamButton.innerText = 'ENABLE PREDICTIONS';
+      // this.webcamRunning = false;
+      // this.enableWebcamButton.innerText = 'ENABLE PREDICTIONS';
     }
     else
     {
       this.webcamRunning = true;
-      this.enableWebcamButton.innerText = 'DISABLE PREDICTIONS';
+      // this.enableWebcamButton.innerText = 'DISABLE PREDICTIONS';
+
+      navigator.mediaDevices.enumerateDevices()
+        .then(devices =>
+        {
+          // Find the deviceId for the secondary camera (typically the rear camera)
+          const videoDevices = devices.filter(device => device.kind === 'videoinput');
+          console.log(videoDevices);
+
+          const secondaryCamera = videoDevices[videoDevices.length - 1];
+
+          navigator.mediaDevices.getUserMedia({
+            video: {
+              deviceId: { exact: secondaryCamera.deviceId }
+            }
+          }).then((stream) =>
+          {
+            this.video.srcObject = stream;
+            this.video.addEventListener('loadeddata', this.predictWebcam.bind(this));
+          });
+        })
+        .then(stream =>
+        {
+          // Use the stream, e.g., attach it to a video element
+        })
+        .catch(err =>
+        {
+          console.log('Error: ', err);
+        });
     }
-
-    // getUsermedia parameters.
-    const constraints = {
-      video: OScreen.portrait ? { facingMode: { exact: 'environment' } } : true
-    };
-
-    // Activate the webcam stream.
-    navigator.mediaDevices.getUserMedia(constraints).then((stream) =>
-    {
-      this.video.srcObject = stream;
-      this.video.addEventListener('loadeddata', this.predictWebcam.bind(this));
-    });
   }
 
   async predictWebcam()
