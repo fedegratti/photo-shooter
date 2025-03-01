@@ -22,7 +22,7 @@ export class FaceLandmarkerController
   {
     await this.createFaceLandmarker();
 
-    await this.faceLandmarker.setOptions({ runningMode: this.runningMode });
+    await this.faceLandmarker.setOptions({ runningMode: this.runningMode, numFaces: 30 });
 
     /********************************************************************
     // Demo 2: Continuously grab image from webcam stream and detect it.
