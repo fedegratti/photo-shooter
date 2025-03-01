@@ -100,11 +100,11 @@ class PreviewView extends CommonView
 
     this.restarting_t += Time.delta_time;
 
-    if (this.restarting_t > 10)
+    if (this.restarting_t > 5)
     {
-      this.restarting_text.innerHTML = `Reiniciando en ${Math.floor(21 - this.restarting_t)}...`;
+      this.restarting_text.innerHTML = `Reiniciando en ${Math.floor(16 - this.restarting_t)}...`;
 
-      if (this.restarting_t > 20)
+      if (this.restarting_t > 15)
       {
         this.restarting_t = 0;
 
