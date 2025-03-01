@@ -16,6 +16,9 @@
         align-items: center;
 
         justify-content: center;
+
+        width: 80%;
+        height: 100%;
     }
 
         .preview__title {
@@ -30,7 +33,7 @@
         .preview__img-container {
             position: relative;
 
-            width: 80%;
+            width: 100%;
 
             // width: 324 * $ptr;
             // height: 576 * $ptr;
@@ -114,6 +117,8 @@
         .preview__restarting-text {
             padding: 40 * $ptr;
 
+            width: 350 * $ptr;
+
             color: black;
 
             font-size: 24 * $ptr;
@@ -121,6 +126,8 @@
             background-color: white;
 
             border-radius: 12 * $ptr;
+
+            box-shadow: 0 0 20 * $ptr rgb(0 0 0 / 60%);
 
             &:empty {
                 display: none;
