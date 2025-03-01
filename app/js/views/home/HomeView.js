@@ -7,6 +7,7 @@ import { HomeTransitionController } from './HomeTransitionController';
 import { ViewManager } from 'ohzi-core';
 import home_data from '../../../data/transitions/home.json';
 import { FaceLandmarkerController } from '../../components/FaceLandmarkerController';
+import { Input } from '../../components/Input';
 import { SmileDetector } from '../../components/SmileDetector';
 import { Settings } from '../../Settings';
 
@@ -90,6 +91,12 @@ export class HomeView extends CommonView
     this.transition_controller.update();
 
     if (SmileDetector.smiling)
+    {
+      ViewManager.go_to_view(Sections.SHOOTING, false);
+    }
+
+    if (Input.keyboard.is_key_released('Enter') ||
+        Input.keyboard.is_key_released('Space'))
     {
       ViewManager.go_to_view(Sections.SHOOTING, false);
     }

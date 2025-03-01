@@ -20,6 +20,7 @@ class KeyboardInputController
     Input.keyboard.register_key('Enter');
     Input.keyboard.register_key('ShiftRight');
     Input.keyboard.register_key('Space');
+    Input.keyboard.register_key('Enter');
   }
 }
 
