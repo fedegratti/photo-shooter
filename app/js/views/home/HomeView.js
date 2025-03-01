@@ -96,7 +96,10 @@ export class HomeView extends CommonView
     }
 
     if (Input.keyboard.is_key_released('Enter') ||
-        Input.keyboard.is_key_released('Space'))
+        Input.keyboard.is_key_released('Space') ||
+        Input.keyboard.is_key_released('ArrowRight') ||
+        Input.keyboard.is_key_released('ArrowLeft') ||
+        Input.clicked)
     {
       ViewManager.go_to_view(Sections.SHOOTING, false);
     }
